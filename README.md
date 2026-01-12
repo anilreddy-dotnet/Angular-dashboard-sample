@@ -8,11 +8,19 @@ This is a sample Angular application demonstrating reusable components, API inte
 - 
 //
 @Injectable({ providedIn: 'root' })
-export class ProductService {
+
+export class ProductService { 
+
   private apiUrl = 'https://api.example.com/products';
+  
   constructor(private http: HttpClient) {} 
-  getProducts() {
+  
+  getProducts() { 
+  
     return this.http.get(this.apiUrl);
-  }
-}
+    
+  } 
+  
+} 
+
 //
