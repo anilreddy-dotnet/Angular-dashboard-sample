@@ -5,13 +5,12 @@ This is a sample Angular application demonstrating reusable components, API inte
 - REST API integration 
 - Responsive UI using Bootstrap 
 - Clean service-based architecture
+- 
 //
 @Injectable({ providedIn: 'root' })
 export class ProductService {
   private apiUrl = 'https://api.example.com/products';
-
-  constructor(private http: HttpClient) {}
-
+  constructor(private http: HttpClient) {} 
   getProducts() {
     return this.http.get(this.apiUrl);
   }
